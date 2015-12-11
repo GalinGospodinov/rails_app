@@ -1,6 +1,6 @@
 <ul>
-<% if user_signed_in? %>
   <li><%= link_to "Home",root_path, class:'fa fa-home' %></li>
+<% if user_signed_in? %>
   <li><%= link_to "Edit profile", edit_user_registration_path, :class=>'fa fa-user' %></li>
   <li><%= link_to "About", pages_about_path, :class=>'fa fa-bolt'  %></li>
   <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class=>'fa fa-sign-out'  %></li>
