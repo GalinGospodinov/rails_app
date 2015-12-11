@@ -1,10 +1,13 @@
 body {
-	background: #00FF00;
+	background-image: url(background.jpg);
+	background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: -8px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
