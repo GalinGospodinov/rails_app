@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'googlemaps/show'
+
   get 'pages/about'
 
 
