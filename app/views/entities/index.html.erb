@@ -1,0 +1,16 @@
+<table style="padding: 50px">
+	 <tr>
+    <th>Address</th>
+    <th>Latitude</th>
+    <th>Longitute</th>
+  </tr>
+  
+  <% @entity.each do |entity| %>
+  <tr>
+    <td><%= entity.address %></td>
+    <td><%= entity.latitude %></td>
+    <td><%= entity.longitute %></td>
+  </tr>
+  <% end %>
+
+</table>

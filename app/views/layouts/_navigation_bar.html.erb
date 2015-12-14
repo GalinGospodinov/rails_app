@@ -1,14 +1,16 @@
-
-  <ul>
+<ul>
   <li><%= link_to "Home",root_path, class:'fa fa-home' %></li>
 <% if user_signed_in? %>
+  <li><%= link_to "Entities", entities_path, :class=>'fa fa-street-view' %></li>
+  <li><%= link_to "Create Entity", new_entity_path, :class=>'fa fa-plus' %></li>
+  <li><%= link_to "About", pages_about_path, :class=>'fa fa-bolt' %></li>
+  <ul class="logout-button-align">
   <li><%= link_to "Edit profile", edit_user_registration_path, :class=>'fa fa-user' %></li>
-  <li><%= link_to "About", pages_about_path, :class=>'fa fa-bolt'  %></li>
   <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class=>'fa fa-sign-out'  %></li>
-
+  </ul>
 <% else %>
   <li><%= link_to "Registration", new_user_registration_path, :class=> 'fa fa-user-plus'  %></li> 
   <li><%= link_to "Login", new_user_session_path, :class=> 'fa fa-sign-in'  %></li>
-  <li><%= link_to "Google maps", googlemaps_show_path, :class=> 'fa fa-street-view'  %></li>
 <% end %>
 </ul>
+

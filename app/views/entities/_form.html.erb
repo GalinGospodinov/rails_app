@@ -1,0 +1,16 @@
+<%= form_for @entity do |f| %>
+
+  <p>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitute %>
+    <%= f.text_field :longitute %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

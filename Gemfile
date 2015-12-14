@@ -27,7 +27,8 @@ gem 'geocoder'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'devise'
-
+# https://github.com/matthuhiggins/foreigner
+gem 'foreigner'
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails"
 

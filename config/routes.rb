@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  get 'googlemaps/show'
+  # post 'entities/create', as: :entities
+
+  # get 'entities/show'
+
+  # get 'entities/new'
+
+  # get 'googlemaps/show'
 
   get 'pages/about'
 
 
-  
+  resources :entities, only: [:new, :create, :index]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
