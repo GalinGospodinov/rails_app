@@ -2,7 +2,8 @@ class EntitiesController < ApplicationController
 
   def create
     @entity = Entity.new(entity_params)
-
+    @entity.user_id = current_user.id
+    puts YAML::dump current_user
     if @entity.save
       redirect_to entities_path, :notice => "Successfully created location."
     else
@@ -18,8 +19,18 @@ class EntitiesController < ApplicationController
     @entity = Entity.all
   end
 
+  def show
+    @entity = Entity.find(params[:id])
+  end
+
+  def destroy
+    @entity = Entity.find(params[:id])
+    @entity.destroy
+    redirect_to :action => :index, status: 303  
+  end
+  
   private 
   def entity_params
-    params.require(:entity).permit(:address, :longitute, :latitude)
+    params.require(:entity).permit(:user_id, :address, :longitude, :latitude)
   end
 end

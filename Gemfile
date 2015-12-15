@@ -19,13 +19,16 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'underscore-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # https://github.com/alexreisner/geocoder
 gem 'geocoder'
 # Use Unicorn as the app server
 # gem 'unicorn'
+# https://binarapps.com/blog/integration-of-googlemaps-in-rails-4/
+gem 'gmaps4rails'
+
 gem 'devise'
 # https://github.com/matthuhiggins/foreigner
 gem 'foreigner'

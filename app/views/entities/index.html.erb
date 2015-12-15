@@ -9,7 +9,8 @@
   <tr>
     <td><%= entity.address %></td>
     <td><%= entity.latitude %></td>
-    <td><%= entity.longitute %></td>
+    <td><%= entity.longitude %></td>
+    <td> <%= button_to "Remove", entity, :method => :delete %> </td>
   </tr>
   <% end %>
 

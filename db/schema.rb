@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151214134333) do
+ActiveRecord::Schema.define(version: 20151215083558) do
 
   create_table "entities", force: :cascade do |t|
-    t.string   "address"
-    t.float    "longitute"
+    t.integer  "user_id",    null: false
+    t.string   "address",    null: false
+    t.float    "longitude"
     t.float    "latitude"
-    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
