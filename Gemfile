@@ -30,6 +30,9 @@ gem 'geocoder'
 gem 'gmaps4rails'
 
 gem 'devise'
+
+gem 'turbolinks'
+
 # https://github.com/matthuhiggins/foreigner
 gem 'foreigner'
 # https://github.com/bokmann/font-awesome-rails
