@@ -8,6 +8,10 @@ class EntitiesController < ApplicationController
     else
       render :action => 'new'
     end
+    @hash = Gmaps4rails.build_markers(@entity) do |entity, marker|
+      marker.lat entity.latitude
+      marker.lng entity.longitude
+    end
   end
 
   def new
